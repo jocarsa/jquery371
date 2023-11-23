@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo jQuery</title>
+        <meta charset="utf-8">
+        <script src="../lib/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(e){
+                    $("#contenedor").hide();
+                });
+                
+            });
+        </script>
+        <style>
+            #contenedor{
+                width:200px;
+                height:200px;
+                padding:10px;
+                background:red;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            Esto es un contenedor HTML
+        </div>
+        <button>Púlsame</button>
+    </body>
+</html>

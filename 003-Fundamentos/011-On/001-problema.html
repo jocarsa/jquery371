@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo jQuery</title>
+        <meta charset="utf-8">
+        <script src="../lib/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#destino").append("ok has pulsado el boton");
+                })
+                $("#destino").append("<button>Pulsame</button>");
+            });
+        </script>
+    </head>
+    <body>
+        <div id="destino">
+        </div>
+    </body>
+</html>

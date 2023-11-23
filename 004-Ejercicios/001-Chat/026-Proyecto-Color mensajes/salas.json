@@ -1,0 +1,15 @@
+[
+    {
+        "nombre":"Sala de Andrea",
+        "descripcion":"La idea de esta sala es chatear con Andrea"
+    },
+    {
+        "nombre":"Sala de David",
+        "descripcion":"La idea de esta sala es chatear con David"
+    }
+    ,
+    {
+        "nombre":"Sala general",
+        "descripcion":"Sala para todo el mundo"
+    }
+]

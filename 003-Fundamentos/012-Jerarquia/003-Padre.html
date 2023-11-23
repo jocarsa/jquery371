@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo jQuery</title>
+        <meta charset="utf-8">
+        <script src="../lib/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("button").click(function(){
+                   $(this).parent().addClass("clasePadre")
+               })
+            });
+        </script>
+        <style>
+            .clasePadre{
+                width:200px;
+                height:200px;
+                background:red;
+                margin:5px;
+                float:left;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="padre">
+            <button>Púlsame</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo jQuery</title>
+        <meta charset="utf-8">
+        <script src="../lib/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $.ajax({
+                    url: "hola.txt", 
+                    success:function(result){
+                        $("#destino").html(result);
+                    },
+                    error:function(){
+                        $("#destino").html("Ha ocurrido algun error")
+                    },
+                    beforeSend:function(){
+                        $("#destino").html("cargando")
+                    },
+                    timeout:5000
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="destino"></div>
+    </body>
+</html>

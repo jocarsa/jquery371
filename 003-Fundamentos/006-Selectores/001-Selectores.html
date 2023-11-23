@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo jQuery</title>
+        <meta charset="utf-8">
+        <script src="../lib/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#elemento").text("Selector por id")
+                $(".elemento").text("Selector por clase")
+                $("article").text("Selector por etiqueta")
+                $("div[name=elemento]").text("Selector por atributo")
+            })
+        </script>
+        <style>
+            h1{color:red;}
+        </style>
+    </head>
+    <body>
+        <div id="elemento"></div>
+        <div class="elemento"></div>
+        <article></article>
+        <div name="elemento"></div>
+    </body>
+</html>

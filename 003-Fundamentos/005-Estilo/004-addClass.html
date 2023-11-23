@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo jQuery</title>
+        <meta charset="utf-8">
+        <script src="../lib/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#elemento").addClass("seleccionado");
+            })
+        </script>
+        <style>
+            .seleccionado{
+                background:red;
+                color:white;
+                width:200px;
+                height:200px;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="elemento">Hola</div>
+    </body>
+</html>

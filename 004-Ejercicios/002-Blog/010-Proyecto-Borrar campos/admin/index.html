@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Panel de control</title>
+        <meta charset="utf-8">
+        <script src="../../lib/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    let titulo = $("#titulo").val();
+                    let texto = $("#texto").val();
+                    let fecha = $("#fecha").val();
+                    console.log(titulo+fecha+texto)
+                    $("#titulo").val("")
+                    $("#texto").val("");
+                    $("#fecha").val("");
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Panel de control</h1>
+        </header>
+        <main>
+            <h1>Crear un nuevo artículo</h1>
+            <p>Introduce el título</p>
+            <input type="text" id="titulo">
+            <p>Introduce el texto</p>
+            <textarea id="texto"></textarea>
+            <p>Introduce la fecha</p>
+            <input type="date" id="fecha">
+            <button id="enviar">Enviar</button>
+        </main>
+        <footer>
+            <p>(c) 2023 Jose Vicente Carratalá</p>
+        </footer>
+    </body>
+</html>

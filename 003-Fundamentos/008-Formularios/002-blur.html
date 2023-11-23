@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Aprendiendo jQuery</title>
+        <meta charset="utf-8">
+        <script src="../lib/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#campo").focus(function(e){
+                    $(this).addClass("seleccionado")
+                });
+                $("#campo").blur(function(e){
+                    $(this).removeClass("seleccionado")
+                    $(this).addClass("ok")
+                });
+            });
+        </script>
+        <style>
+            .seleccionado{background:rgb(255,255,200);}
+            .ok{background:rgb(200,255,200);}
+        </style>
+    </head>
+    <body>
+        <input type="text" id="campo">
+    </body>
+</html>

@@ -1,0 +1,21 @@
+[
+    {
+        "usuario":"josevicente",
+        "mensaje":"esto es una prueba",
+        "epoch":"12345",
+        "fecha":"2023-11-23"
+    },
+    {
+        "usuario":"josevicente",
+        "mensaje":"esto es otra prueba",
+        "epoch":"12345",
+        "fecha":"2023-11-23"
+    }
+    ,
+    {
+        "usuario":"josevicente",
+        "mensaje":"este es el tercer mensaje",
+        "epoch":"12345",
+        "fecha":"2023-11-23"
+    }
+]
