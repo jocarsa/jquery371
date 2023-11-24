@@ -1,0 +1,30 @@
+Claro, el método `.text()` en jQuery se utiliza para establecer el contenido de texto de un elemento seleccionado. Puedes usar este método para agregar o reemplazar el texto de un elemento HTML.
+
+### Ejemplo de uso para escribir contenido:
+
+Supongamos que tienes un elemento HTML con un ID 'miElemento' al que quieres agregar o cambiar el contenido de texto.
+
+#### HTML:
+```html
+<div id="miElemento">Texto original</div>
+```
+
+#### jQuery:
+```javascript
+$(document).ready(function() {
+    // Establece un nuevo texto en el elemento con el ID 'miElemento'
+    $('#miElemento').text('Este es un nuevo texto');
+});
+```
+
+En este caso, el código jQuery selecciona el elemento con el ID 'miElemento' y utiliza el método `.text()` para establecer su contenido de texto como "Este es un nuevo texto". El resultado será que el texto original dentro del elemento `<div>` será reemplazado por el nuevo texto proporcionado.
+
+Después de ejecutar el código anterior, el HTML se verá así:
+
+```html
+<div id="miElemento">Este es un nuevo texto</div>
+```
+
+El método `.text()` reemplazará cualquier contenido de texto existente dentro del elemento seleccionado con el texto especificado como argumento.
+
+Es importante tener en cuenta que si el elemento seleccionado tiene hijos (nodos hijos), el método `.text()` reemplazará el contenido de texto de ese elemento y sus descendientes, eliminando cualquier etiqueta HTML o contenido que no sea texto plano y reemplazándolo por el texto proporcionado. Si necesitas mantener las etiquetas HTML existentes dentro del elemento y solo cambiar su texto, deberías usar el método `.html()` en su lugar.

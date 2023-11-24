@@ -1,0 +1,37 @@
+La inclusión de jQuery como un archivo local se refiere al proceso de descargar los archivos de la biblioteca jQuery y luego referenciarlos desde la propia estructura de archivos de tu proyecto web, en lugar de cargarlos desde un servidor remoto.
+
+Estos son los pasos generales para incluir jQuery como archivo local:
+
+1. **Descarga de jQuery:** Ve al sitio web oficial de jQuery (https://jquery.com/) y descarga la versión de jQuery que desees utilizar. Generalmente, tendrás la opción de descargar la versión comprimida (minificada) y la versión de desarrollo. La versión minificada es más pequeña en tamaño, lo que ayuda a reducir el tiempo de carga de la página.
+
+2. **Coloca el archivo en tu proyecto:** Después de descargar jQuery, coloca el archivo en un directorio específico de tu proyecto. Por ejemplo, podrías crear una carpeta llamada "js" o "scripts" y guardar el archivo de jQuery allí.
+
+3. **Referencia del archivo en tu HTML:** En tu documento HTML (por ejemplo, index.html), utiliza la etiqueta `<script>` para enlazar el archivo jQuery que acabas de descargar. Asegúrate de que la ruta especificada en el atributo `src` coincida con la ubicación y el nombre de archivo de tu archivo jQuery descargado.
+
+   ```html
+   <!-- Ejemplo de referencia a jQuery como archivo local -->
+   <!DOCTYPE html>
+   <html lang="es">
+   <head>
+       <meta charset="UTF-8">
+       <title>Uso de jQuery - Archivo Local</title>
+       <!-- Ruta relativa al archivo jQuery en tu proyecto -->
+       <script src="js/jquery.min.js"></script>
+   </head>
+   <body>
+       <!-- Aquí puedes agregar tu código jQuery -->
+       <script>
+           // Ejemplo básico de uso de jQuery después de haberlo incluido
+           $(document).ready(function(){
+               // Tu código jQuery aquí
+               $('h1').text('¡Hola desde jQuery!');
+           });
+       </script>
+       <h1>Texto inicial</h1>
+   </body>
+   </html>
+   ```
+
+4. **Verifica la ruta del archivo:** Asegúrate de que la ruta al archivo jQuery en tu etiqueta `<script>` coincida con la ubicación y el nombre de archivo exactos en tu proyecto. Si la ruta es incorrecta, el navegador no podrá encontrar el archivo y generará un error.
+
+Incluir jQuery como un archivo local puede ser útil en circunstancias donde no deseas depender de la disponibilidad de una conexión a Internet para cargar bibliotecas externas. Además, en algunos casos, puede mejorar el rendimiento de la carga de la página al almacenar y servir localmente los archivos necesarios para tu sitio web.

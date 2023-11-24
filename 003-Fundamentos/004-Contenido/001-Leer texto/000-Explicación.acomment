@@ -1,0 +1,61 @@
+El método `.text()` en jQuery se utiliza para obtener el contenido de texto de los elementos seleccionados o para establecer el contenido de texto en los elementos seleccionados.
+
+### Uso para obtener el contenido de texto:
+
+```javascript
+$(document).ready(function() {
+    // Obtiene el texto del elemento con el ID 'miElemento' y lo muestra en la consola
+    var texto = $('#miElemento').text();
+    console.log(texto);
+});
+```
+
+El código anterior obtiene el contenido de texto del elemento con el ID `miElemento` y lo almacena en la variable `texto`. Luego, muestra ese texto en la consola del navegador.
+
+### Uso para establecer el contenido de texto:
+
+```javascript
+$(document).ready(function() {
+    // Establece un nuevo texto en el elemento con el ID 'miElemento'
+    $('#miElemento').text('Este es un nuevo texto');
+});
+```
+
+En este caso, el El método `.text()` en jQuery se utiliza para obtener el contenido de texto de los elementos seleccionados o para establecer el contenido de texto en los elementos seleccionados.
+
+### Uso para obtener el contenido de texto:
+
+```javascript
+$(document).ready(function() {
+    // Obtiene el texto del elemento con el ID 'miElemento' y lo muestra en la consola
+    var texto = $('#miElemento').text();
+    console.log(texto);
+});
+```
+
+El código anterior obtiene el contenido de texto del elemento con el ID `miElemento` y lo almacena en la variable `texto`. Luego, muestra ese texto en la consola del navegador.
+
+### Uso para establecer el contenido de texto:
+
+```javascript
+$(document).ready(function() {
+    // Establece un nuevo texto en el elemento con el ID 'miElemento'
+    $('#miElemento').text('Este es un nuevo texto');
+});
+```
+
+En este caso, el código establece el contenido de texto del elemento con el ID `miElemento` con el texto "Este es un nuevo texto". Esto reemplaza cualquier texto existente dentro del elemento con el nuevo texto proporcionado.
+
+### Características clave del método `.text()`:
+
+- **Obtener texto:** Cuando se llama sin parámetros, devuelve el contenido de texto del primer elemento coincidente en la selección.
+- **Establecer texto:** Si se proporciona un argumento al método (una cadena de texto), reemplaza el contenido de texto de todos los elementos coincidentes en la selección con esa cadena de texto.
+
+El método `.text()` es útil cuando necesitas leer o modificar el contenido de texto de los elementos HTML seleccionados. Es importante tener en cuenta que este método manipula solo el texto dentro de los elementos, excluyendo cualquier etiqueta HTML que pueda estar presente dentro del texto.código establece el contenido de texto del elemento con el ID `miElemento` con el texto "Este es un nuevo texto". Esto reemplaza cualquier texto existente dentro del elemento con el nuevo texto proporcionado.
+
+### Características clave del método `.text()`:
+
+- **Obtener texto:** Cuando se llama sin parámetros, devuelve el contenido de texto del primer elemento coincidente en la selección.
+- **Establecer texto:** Si se proporciona un argumento al método (una cadena de texto), reemplaza el contenido de texto de todos los elementos coincidentes en la selección con esa cadena de texto.
+
+El método `.text()` es útil cuando necesitas leer o modificar el contenido de texto de los elementos HTML seleccionados. Es importante tener en cuenta que este método manipula solo el texto dentro de los elementos, excluyendo cualquier etiqueta HTML que pueda estar presente dentro del texto.

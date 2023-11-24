@@ -1,0 +1,35 @@
+El método `.html()` en jQuery se utiliza para establecer o obtener el contenido HTML de un elemento seleccionado. Este método es útil para manipular dinámicamente el contenido HTML dentro de un elemento específico en el DOM.
+
+Aquí tienes un ejemplo de cómo usar el método `.html()` en jQuery para escribir contenido dentro de un elemento:
+
+Supongamos que tienes un elemento HTML `<div>` con el ID "contenido":
+
+HTML:
+```html
+<div id="contenido">
+    <!-- Aquí se puede agregar contenido dinámico -->
+</div>
+```
+
+jQuery:
+```javascript
+// Obtener el elemento con el ID "contenido" y establecer contenido HTML
+$('#contenido').html('<p>Este es un párrafo agregado dinámicamente con jQuery</p>');
+
+// También puedes concatenar contenido existente con el nuevo
+var nuevoContenido = '<h2>Un nuevo encabezado</h2>';
+nuevoContenido += '<p>Otro párrafo para agregar</p>';
+$('#contenido').html(nuevoContenido);
+```
+
+El método `.html()` reemplaza todo el contenido HTML dentro del elemento seleccionado con el nuevo contenido proporcionado como argumento. Es importante tener en cuenta que si se usa este método, se sobrescribirá todo el contenido existente en ese elemento.
+
+Además, el método `.html()` también puede usarse sin argumentos para obtener el contenido HTML actual de un elemento. Por ejemplo:
+
+```javascript
+// Obtener el contenido HTML del elemento con ID "contenido"
+var contenidoActual = $('#contenido').html();
+console.log(contenidoActual); // Muestra el contenido HTML en la consola
+```
+
+Esto capturará el contenido HTML dentro del elemento con el ID "contenido" y lo almacenará en la variable `contenidoActual`. Esta variable luego puede ser utilizada según sea necesario en tu aplicación.

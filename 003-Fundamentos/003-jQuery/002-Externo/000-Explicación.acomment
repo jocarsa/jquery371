@@ -1,0 +1,18 @@
+La inclusión de jQuery desde un CDN (Content Delivery Network o Red de Distribución de Contenido) implica enlazar la biblioteca jQuery a tu sitio web directamente desde un servidor remoto en lugar de descargar los archivos y alojarlos localmente en tu servidor.
+
+Los pasos para incluir jQuery desde un CDN son los siguientes:
+
+1. **Selecciona un CDN confiable:** Hay varios CDNs disponibles que alojan bibliotecas populares, incluyendo jQuery. Algunos de los CDNs comunes son Google CDN, Microsoft CDN, Cloudflare CDN, entre otros. Por ejemplo, para jQuery, se puede utilizar el CDN de Google:
+
+```html
+<!-- Inclusión de jQuery desde el CDN de Google -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+```
+
+2. **Agrega el enlace en tu HTML:** En tu archivo HTML, usualmente en la sección `<head>` o justo antes del cierre del `<body>`, agrega la etiqueta `<script>` con la URL del CDN de jQuery que desees usar. En el ejemplo proporcionado, se está utilizando el CDN de Google para jQuery versión 3.5.1, pero puedes actualizar la versión a la más reciente si así lo prefieres.
+
+3. **Verifica la disponibilidad del CDN:** Asegúrate de que el CDN que elijas sea confiable y esté disponible. Los CDNs populares suelen ser muy confiables y ofrecen ventajas como la distribución global de archivos, lo que puede mejorar la velocidad de carga de tu sitio web al aprovechar servidores ubicados estratégicamente en diferentes regiones.
+
+Utilizar un CDN para cargar jQuery tiene sus ventajas, como la posibilidad de cargar la biblioteca desde un servidor cercano al usuario, lo que puede acelerar el tiempo de carga de tu sitio web si el servidor CDN está bien distribuido geográficamente y tiene una alta disponibilidad.
+
+La elección entre cargar jQuery desde un CDN o alojarlo localmente en tu servidor depende de varios factores, como la preferencia personal, los requisitos de tu proyecto, las políticas de seguridad y las necesidades de rendimiento. Ambas formas tienen sus pros y contras, y la selección dependerá de tus necesidades específicas.

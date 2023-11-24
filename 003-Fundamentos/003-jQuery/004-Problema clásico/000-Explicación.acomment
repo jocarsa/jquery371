@@ -1,0 +1,52 @@
+El problema común en JavaScript ocurre cuando intentas seleccionar un elemento del DOM utilizando un selector (como `getElementById`, `querySelector`, `getElementsByClassName`, entre otros) antes de que el elemento exista en la página.
+
+Esto puede ocurrir cuando el código JavaScript se ejecuta antes de que la página HTML se haya cargado completamente o antes de que el elemento que estás intentando seleccionar se haya creado dinámicamente mediante JavaScript.
+
+Por ejemplo, considera el siguiente código:
+
+```javascript
+document.getElementById('miElemento').style.color = 'red';
+```
+
+Si este código se ejecuta antes de que exista un elemento con el ID `'miElemento'` en el DOM, JavaScript no podrá encontrar dicho elemento y lanzará un error. Esto se debe a que `document.getElementById('miElemento')` devolverá `null` si el elemento aún no existe en el momento en que se ejecuta la línea de código.
+
+Para evitar este problema, se pueden implementar algunas soluciones:
+
+### 1. Ejecutar código después de que se cargue el DOM:
+
+Usando el evento `DOMContentLoaded` puedes asegurarte de que el código JavaScript se ejecute después de que la estructura HTML se haya cargado.
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+    // Tu código aquí
+    document.getElementById('miElemento').style.color = 'red';
+});
+```
+
+### 2. Ubicar el script al final del cuerpo del documento:
+
+Colocar los scripts justo antes de cerrar la etiqueta `</body>` puede asegurar que el código se ejecute después de que todos los elementos HTML se hayan cargado.
+
+```html
+<!-- ... Código HTML ... -->
+
+<script>
+    // Tu código aquí
+    document.getElementById('miElemento').style.color = 'red';
+</script>
+</body>
+</html>
+```
+
+### 3. Utilizar `window.onload`:
+
+Esta función se ejecuta una vez que todo el contenido (incluyendo imágenes y otros recursos) se ha cargado completamente.
+
+```javascript
+window.onload = function() {
+    // Tu código aquí
+    document.getElementById('miElemento').style.color = 'red';
+};
+```
+
+Utilizar estas técnicas te permitirá asegurarte de que los elementos HTML estén disponibles en el DOM antes de intentar manipularlos con JavaScript, evitando así errores de selección de elementos que aún no existen.

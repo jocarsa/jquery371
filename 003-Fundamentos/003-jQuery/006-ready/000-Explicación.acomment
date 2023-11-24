@@ -1,0 +1,28 @@
+En jQuery, `$(document).ready()` es un método que se utiliza para ejecutar código JavaScript una vez que el DOM (Document Object Model) ha sido completamente cargado. Este método es una forma conveniente de asegurarse de que el código se ejecute después de que todos los elementos HTML estén disponibles para ser manipulados.
+
+La sintaxis básica de `$(document).ready()` es la siguiente:
+
+```javascript
+$(document).ready(function() {
+    // Tu código aquí se ejecutará una vez que el DOM esté listo
+    // Puedes manipular elementos del DOM o realizar cualquier acción una vez que estén disponibles
+});
+```
+
+También se puede utilizar una forma abreviada de este método, que es el uso del signo dólar y la función anónima de JavaScript:
+
+```javascript
+$(function() {
+    // Tu código aquí se ejecutará una vez que el DOM esté listo
+});
+```
+
+### Características clave de `$(document).ready()`:
+
+1. **Ejecución del código cuando el DOM está listo:** El código que está dentro de `$(document).ready()` se ejecutará tan pronto como la estructura HTML de la página haya sido completamente analizada y construida, pero antes de que se hayan cargado todos los recursos como imágenes o hojas de estilo externas.
+
+2. **Evita errores de selección de elementos:** Garantiza que los elementos del DOM a los que haces referencia en tu código jQuery existan antes de intentar manipularlos, evitando así errores como seleccionar elementos que aún no han sido cargados.
+
+3. **Alternativa al evento `window.onload`:** `$(document).ready()` se dispara antes que el evento `window.onload`, lo que significa que el código dentro de él se ejecuta antes de que todos los recursos externos (imágenes, estilos, etc.) se hayan cargado por completo.
+
+En resumen, `$(document).ready()` en jQuery es una forma útil y comúnmente utilizada para asegurarse de que el código JavaScript se ejecute tan pronto como el DOM esté listo para ser manipulado, proporcionando una manera más segura y conveniente de trabajar con el código que depende de la estructura del documento HTML.

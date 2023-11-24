@@ -1,0 +1,24 @@
+`window.onload` es un evento en JavaScript que se dispara cuando todo el contenido de una página web, incluyendo imágenes, hojas de estilo, scripts y otros recursos, se ha cargado completamente en el navegador.
+
+Cuando un documento HTML se carga en un navegador, el proceso de carga se realiza en etapas. Primero, se carga la estructura básica del documento (el DOM), y luego se procede a cargar otros recursos asociados, como imágenes, scripts externos, hojas de estilo, etc. El evento `window.onload` se activa cuando todo este proceso ha finalizado con éxito.
+
+### Uso de `window.onload`:
+
+Puedes usar `window.onload` para asegurarte de que tu código JavaScript se ejecute solo después de que todos los elementos de la página hayan sido cargados. Esto es útil cuando necesitas manipular elementos del DOM o realizar ciertas acciones una vez que la página esté completamente cargada.
+
+```javascript
+window.onload = function() {
+    // Tu código aquí se ejecutará cuando todos los elementos de la página estén cargados
+    document.getElementById('miElemento').style.color = 'red';
+};
+```
+
+### Consideraciones:
+
+- **Sustitución de eventos:** Es importante tener en cuenta que si asignas múltiples funciones a `window.onload`, la última función asignada sobrescribirá a las anteriores. Si necesitas ejecutar múltiples acciones al cargarse la página, es preferible utilizar métodos más modernos como `addEventListener`.
+
+- **Incompatibilidad con otros eventos:** `window.onload` puede entrar en conflicto si se usan varios eventos de carga en una página. Por ejemplo, si ya se ha asignado un manejador de eventos a `window.onload`, asignar otro después podría sobrescribir el primero.
+
+- **Rendimiento:** En páginas con mucho contenido o recursos pesados, `window.onload` puede causar una demora en la ejecución del código JavaScript, ya que espera a que todos los recursos se carguen por completo.
+
+En resumen, `window.onload` es un evento fundamental que permite ejecutar código JavaScript después de que todos los elementos de una página web se han cargado completamente, garantizando que los elementos del DOM estén disponibles para su manipulación. Sin embargo, en aplicaciones modernas, se recomienda el uso de métodos más flexibles y versátiles, como `addEventListener`, para gestionar eventos de carga de manera más controlada.
